@@ -1,1 +1,12 @@
-// Начните писать стили здесь
+@import "mixins";
+@import "fonts";
+@import "variables";
+@import "basic";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/features";
+@import "blocks/reviews";
+@import "blocks/price";
+@import "blocks/contacts";

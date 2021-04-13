@@ -1,0 +1,13 @@
+.promo {
+  background-image: url("../../img/promo-background-img.png");
+  background-repeat: no-repeat;
+  background-color: $primary-bg-color;
+}
+
+.promo__download {
+  @include text($basic-white, 18px, bold, 18px);
+}
+
+.promo__description {
+  @include text($color: $basic-white, $font-weight: 300);
+}
