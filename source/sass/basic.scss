@@ -2,13 +2,13 @@
   height: 100%;
 }
 
-body {
+.body {
   min-width: 280px;
   font-family: "Open Sans" Arial, sans-serif;
 
   @include text;
 
-  background-color: var(--basic-white);
+  background-color: $basic-white;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;

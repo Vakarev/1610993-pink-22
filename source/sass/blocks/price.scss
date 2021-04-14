@@ -7,9 +7,9 @@
   line-height: 30px;
 
   &--header {
-    @include text ($basic-white, 16px, 700, 30px);
+    @include text ($tretiary-text-color, 16px, 700, 30px);
 
-    background-color: $first-text-color;
+    background-color: $tretiary-bg-color;
 
     p {
       font-weight: 300;

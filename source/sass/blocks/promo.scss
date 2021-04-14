@@ -5,9 +5,9 @@
 }
 
 .promo__download {
-  @include text($basic-white, 18px, bold, 18px);
+  @include text($tretiary-text-color, 18px, bold, 18px);
 }
 
 .promo__description {
-  @include text($color: $basic-white, $font-weight: 300);
+  @include text($color: $tretiary-text-color, $font-weight: 300);
 }

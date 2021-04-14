@@ -1,5 +1,5 @@
 .reviews__autor-name {
-  @include text($basic-black, 18px, 700, 30px);
+  @include text($title-text-color, 18px, 700, 30px);
 
   font-style: normal;
 }
