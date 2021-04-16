@@ -1,0 +1,18 @@
+.price {
+  background-color: $main-bg-color;
+}
+
+.price-table__cell {
+  text-transform: uppercase;
+  line-height: 30px;
+
+  &--header {
+    @include text ($tretiary-text-color, 16px, 700, 30px);
+
+    background-color: $tretiary-bg-color;
+
+    p {
+      font-weight: 300;
+    }
+  }
+}

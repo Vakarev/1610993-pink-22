@@ -1,0 +1,9 @@
+.title {
+  &--level-1 {
+    @include text($tretiary-text-color, 24px, 300, 29px);
+  }
+
+  &--level-2 {
+    @include text($title-text-color 18px, 700);
+  }
+}
