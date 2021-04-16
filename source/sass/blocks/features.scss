@@ -3,8 +3,6 @@
 }
 
 .features__list {
-  @include list-reset;
-
   background-color: $main-bg-color;
   background-image: url("../../img/features-background-img.png");
   background-repeat: no-repeat;

@@ -2,10 +2,6 @@
   @include text($basic-white, 18px, bold, 32px);
 }
 
-.nav__list {
-  @include list-reset;
-}
-
 .nav__link {
   color: $tretiary-text-color;
 }
