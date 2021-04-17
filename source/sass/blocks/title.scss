@@ -6,4 +6,10 @@
   &--level-2 {
     @include text($title-text-color 18px, 700);
   }
+
+  &--level-4 {
+    text-transform: uppercase;
+
+    @include text($color: $second-text-color, $line-height: 18px);
+  }
 }

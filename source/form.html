@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <header class="header wrapper">
@@ -29,9 +30,9 @@
           </ul>
         </nav>
     </header>
-    <main class="main">
-      <h1 class="form-title title title--level-1">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="promo-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    <main class="main form">
+      <h1 class="form__title title title--level-1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="form__promo-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form method="get" action="https://echo.htmlacademy.ru" class="form">
         <fieldset class="form__item">
           <label class="text-label">Фамилия:
@@ -45,7 +46,7 @@
           </label>
         </fieldset>
         <fieldset class="form__item">
-          <legend class="form__legend title title--level-4">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="form__subtitle title title--level-4">Ваши безбашенные достижения в путешествии</legend>
           <label class="checkbox-label">
             <input class="form__checkbox" type="checkbox" name="checkbox-item">
             Сделал селфи с акулой
@@ -80,7 +81,7 @@
           </label>
         </fieldset>
         <fieldset class="form__item">
-          <legend class="form__legend title title--level-4">С каким приложением путешествовали?</legend>
+          <legend class="form__subtitle title title--level-4">С каким приложением путешествовали?</legend>
           <label class="radio-label">
             <input class="form__radio" type="radio" name="radion-item">
             Pink для iOS
@@ -95,15 +96,16 @@
           </label>
         </fieldset>
         <fieldset class="form__item">
-          <legend class="form__legend title title--level-4">Опишите свои эмоции</legend>
+          <legend class="form__subtitle title title--level-4">Опишите свои эмоции</legend>
           <textarea class="form__textarea" name="text" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
         <input class="form__button" type="submit" name="submit" value="Отправить форму">
       </form>
-      <p class="legend">
+      <p class="form__legend">
         <small>
-          *-Обязательные поля
+          *
         </small>
+          -Обязательные поля
       </p>
     </main>
     <footer class="footer wrapper">
@@ -113,7 +115,7 @@
         <li class="socials__item"><a href="#" class="socials__link" title="facebook"><img class="socials__img" src="img/facebook-icon.svg" alt="facebook"></a></li>
         <li class="socials__item"><a href="#" class="socials__link" title="youtube"><img class="socials__img" src="img/youtube-icon.svg" alt="youtube"></a></li>
       </ul>
-      <a href="#" class="footer-link">Разрабтано</a>
+      <a href="#" class="footer__link">Разрабтано</a>
   </footer>
 </body>
 </html>
