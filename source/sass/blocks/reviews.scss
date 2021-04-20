@@ -1,9 +1,3 @@
 .reviews__autor-name {
-  @include text($title-text-color, 18px, 700, 30px);
-
   font-style: normal;
-}
-
-.reviews__text {
-  @include text($line-height: 30px);
 }

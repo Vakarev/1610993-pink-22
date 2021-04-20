@@ -1,0 +1,17 @@
+.form__title {
+  color: $tretiary-text-color;
+}
+
+.form__button {
+  color: $tretiary-text-color;
+  text-transform: uppercase;
+  background-color: $form-button-bg;
+}
+
+.form__legend {
+  text-transform: uppercase;
+}
+
+.form__legend small {
+  color: $second-text-color;
+}
