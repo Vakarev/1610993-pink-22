@@ -2,9 +2,3 @@
 .contacts__title {
   color: $first-text-color;
 }
-
-.contacts__number,
-.contacts__email,
-.contacts__addres {
-  @include text($second-text-color, 24px, 300, 32px);
-}

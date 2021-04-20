@@ -2,27 +2,13 @@
   color: $tretiary-text-color;
 }
 
-.form__promo-text {
-  line-height: 30px;
-}
-
-.form label {
-  text-transform: uppercase;
-}
-
-.form input, .form__textarea {
-  @include text($font-size: 18px, $line-height: 30px);
-}
-
-.form .form__button {
-  @include text($tretiary-text-color, 18px, 700, 30px);
-
+.form__button {
+  color: $tretiary-text-color;
   text-transform: uppercase;
   background-color: $form-button-bg;
 }
 
 .form__legend {
-  line-height: 30px;
   text-transform: uppercase;
 }
 

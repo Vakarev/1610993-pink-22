@@ -4,12 +4,52 @@
   }
 
   &--level-2 {
-    @include text($title-text-color 18px, 700);
+    @include text($title-text-color, 18px, 700);
   }
 
   &--level-4 {
     text-transform: uppercase;
 
     @include text($color: $second-text-color, $line-height: 18px);
+  }
+
+  &--level-5 {
+    @include text($basic-white, 18px, 700, 32px);
+  }
+
+  &--level-6 {
+    @include text($tretiary-text-color, 18px, 700, 18px);
+  }
+
+  &--level-7 {
+    @include text($color: $tretiary-text-color, $font-weight: 300);
+  }
+
+  &--level-8 {
+    @include text($title-text-color, 18px, 700, 30px);
+  }
+
+  &--level-9 {
+    @include text($line-height: 30px);
+  }
+
+  &--level-10 {
+    @include text($tretiary-text-color, 16px, 700, 30px);
+  }
+
+  &--level-11 {
+    @include text($tretiary-text-color, 18px, 300, 30px);
+  }
+
+  &--level-12 {
+    @include text($second-text-color, 24px, 300, 33px);
+  }
+
+  &--level-13 {
+    @include text($line-height: 18px);
+  }
+
+  &--level-14 {
+    @include text($font-size: 18px, $line-height: 30px);
   }
 }
