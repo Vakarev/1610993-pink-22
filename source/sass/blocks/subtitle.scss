@@ -1,0 +1,17 @@
+.subtitle {
+  &--1 {
+    @include text($second-text-color, 24px, 300, 33px);
+  }
+
+  &--2 {
+    @include text($line-height: 18px);
+  }
+
+  &--3 {
+    @include text($font-size: 18px, $line-height: 30px);
+  }
+
+  &--4 {
+    @include text($font-weight: 700);
+  }
+}

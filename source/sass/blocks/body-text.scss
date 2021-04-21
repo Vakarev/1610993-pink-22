@@ -1,0 +1,26 @@
+.body-text {
+  &--1 {
+    @include text($line-height: 30px);
+  }
+
+  &--2 {
+    @include text($tretiary-text-color, 16px, 700, 30px);
+  }
+
+  &--3 {
+    @include text($tretiary-text-color, 18px, 300, 30px);
+  }
+
+  &--4 {
+    text-transform: uppercase;
+    background-color: $main-text-bg;
+
+    @include text ($tretiary-text-color, 12px, 700)
+  }
+
+  &--5 {
+    text-transform: uppercase;
+
+    @include text($font-size: 12px, $font-weight: 300);
+  }
+}
