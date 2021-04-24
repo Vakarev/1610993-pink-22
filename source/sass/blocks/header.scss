@@ -2,3 +2,13 @@
   background-color: $tretiary-bg-color;
   text-transform: uppercase;
 }
+
+@media (min-width: $desktop-width) {
+  .header {
+    display: flex;
+  }
+
+  .header__logo {
+    margin-right: 173px;
+  }
+}
