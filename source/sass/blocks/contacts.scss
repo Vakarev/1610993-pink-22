@@ -3,8 +3,6 @@
   color: $first-text-color;
 }
 
-@media (min-width: $tablet-width) {
-  .contacts__list {
-    display: flex;
-  }
+.contacts__list {
+  display: flex;
 }

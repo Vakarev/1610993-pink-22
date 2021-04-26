@@ -6,8 +6,5 @@
   background-color: $main-bg-color;
   background-image: url("../../img/features-background-img.png");
   background-repeat: no-repeat;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
+  display: flex;
 }
