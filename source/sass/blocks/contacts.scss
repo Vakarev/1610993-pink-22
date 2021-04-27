@@ -2,3 +2,8 @@
 .contacts__title {
   color: $first-text-color;
 }
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+}

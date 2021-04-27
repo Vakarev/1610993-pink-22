@@ -1,3 +1,12 @@
+.reviews__autor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__autor-name {
+  order: 2;
+}
+
 .reviews__autor-name {
   font-style: normal;
 }

@@ -1,0 +1,7 @@
+.platform {
+  display: flex;
+}
+
+.platform__item + .platform__item {
+  margin-left: 36px;
+}
