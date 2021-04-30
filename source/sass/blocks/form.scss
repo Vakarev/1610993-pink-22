@@ -1,11 +1,13 @@
-.form__title {
-  color: $tretiary-text-color;
+.form {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form__button {
   color: $tretiary-text-color;
   text-transform: uppercase;
   background-color: $form-button-bg;
+  order: 6;
 }
 
 .form__legend {
@@ -14,4 +16,35 @@
 
 .form__legend small {
   color: $second-text-color;
+}
+
+.form__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .form__item {
+    &--name {
+      order: 1;
+    }
+
+    &--achievments {
+      order: 4;
+      flex-direction: row;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--app {
+      order: 2;
+    }
+
+    &--comment {
+      order: 5;
+    }
+  }
 }
