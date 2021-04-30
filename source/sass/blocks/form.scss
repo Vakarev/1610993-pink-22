@@ -22,41 +22,29 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
-  &--name {
-    order: 1;
-  }
-
-  &--achievments {
-    order: 2;
-  }
-
-  &--contacts {
-    order: 3;
-  }
-
-  &--app {
-    order: 4;
-  }
-
-  &--comment {
-    order: 5;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .form__item {
+    &--name {
+      order: 1;
+    }
+
     &--achievments {
       order: 4;
       flex-direction: row;
+    }
+
+    &--contacts {
+      order: 3;
     }
 
     &--app {
       order: 2;
     }
 
-    &--contacts {
-      flex-direction: row;
+    &--comment {
+      order: 5;
     }
   }
 }
