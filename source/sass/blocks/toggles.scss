@@ -1,0 +1,24 @@
+.toggles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 58px;
+}
+
+.toggles__button {
+  box-sizing: content-box;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: $tretiary-bg-color;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &--active {
+    background-color: $basic-white;
+    border: 3px solid $tretiary-bg-color;
+    opacity: 1;
+  }
+}

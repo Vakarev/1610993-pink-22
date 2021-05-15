@@ -1,17 +1,41 @@
 .nav__list {
-  display: flex;
+  display: none;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav__toggle {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    margin-top: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .nav {
-    margin-left: auto;
-  }
-
   .nav__item + .nav__item {
     margin-left: 80px;
   }
 
   .nav__toggle {
     display: none;
+  }
+
+  .nav__link {
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .nav {
+    margin-top: 13px;
+    margin-right: 2px;
   }
 }

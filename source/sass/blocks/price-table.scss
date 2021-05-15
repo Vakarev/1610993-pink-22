@@ -1,3 +1,157 @@
 .price-table {
   text-transform: uppercase;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 11px solid $table-border-color;
+  }
+}
+
+.price-table__header {
+  background-color: $tretiary-bg-color;
+  padding: 12px 0 28px;
+  border: 2px solid $border-color;
+  position: relative;
+
+  &--hit::before {
+    content: "";
+    position: absolute;
+    height: 74px;
+    width: 74px;
+    background-image: url("../../img/hit.svg");
+    right: 206px;
+    bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      height: 61px;
+      width: 61px;
+      background-image: url("../../img/hit-tablet.svg");
+      right: 93px;
+      bottom: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 74px;
+      width: 74px;
+      background-image: url("../../img/hit.svg");
+      right: 161px;
+      bottom: 24px;
+    }
+  }
+
+  &--empty {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 0 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding: 16px 0 23px;
+  }
+}
+
+.price-table__cell {
+  min-width: 278px;
+  border: 2px solid $border-color;
+  position: relative;
+  background-color: $cell-color;
+
+  &--ok::before {
+    content: "";
+    width: 31px;
+    height: 21px;
+    position: absolute;
+    background-image: url("../../img/ok.svg");
+    left: 230px;
+    top: 17px;
+
+    @media (min-width: $tablet-width) {
+      left: 62px;
+      top: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 102px;
+      top: 17px;
+    }
+  }
+
+  &--none::before {
+    content: "";
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    background-image: url("../../img/none.svg");
+    left: 232px;
+    top: 17px;
+
+    @media (min-width: $tablet-width) {
+      left: 63px;
+      top: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 104px;
+      top: 15px;
+    }
+  }
+
+    @media (min-width: $tablet-width) {
+      min-width: 152px;
+      padding: 7px 0 10px;
+    }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 235px;
+    padding: 13px 0 17px;
+  }
+}
+
+.price-table__body .price-table__row:nth-child(3) {
+  .price-table__cell {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 6px;
+    }
+  }
+}
+
+.price-table__text {
+  margin-top: 12px;
+  padding-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+    margin: 0;
+    padding-left: 14px;
+  }
+
+  &--none {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-left: 25px;
+  }
 }

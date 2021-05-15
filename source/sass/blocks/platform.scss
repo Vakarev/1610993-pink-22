@@ -1,7 +1,10 @@
 .platform {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.platform__item + .platform__item {
-  margin-left: 36px;
+.platform__item:nth-child(3) {
+  height: 41px;
 }

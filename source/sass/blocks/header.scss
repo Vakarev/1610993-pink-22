@@ -1,9 +1,56 @@
 .header {
-  background-color: $tretiary-bg-color;
-  text-transform: uppercase;
+  background-image: url("../../img/header-background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: $primary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/header-background-img-tablet.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/header-background-img-desktop.jpg");
+    background-size: cover;
+  }
+}
+
+.header__inner {
+  position: relative;
+}
+
+.header__inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $basic-black;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.header__wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0 15px;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 0 37px;
+  }
 }
 
 .header__title {
   color: $tretiary-text-color;
+}
+
+.header__logo {
+  @media (min-width: $desktop-width) {
+    margin-left: 2px;
+  }
 }

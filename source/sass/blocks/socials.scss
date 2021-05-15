@@ -1,3 +1,31 @@
 .socials {
   display: flex;
 }
+
+.socials__item {
+  box-sizing: border-box;
+  position: relative;
+  width: 53px;
+  height: 53px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+
+  &:nth-child(2) {
+    margin: 0 9px 0;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 7px 0;
+    }
+  }
+}
+
+.socials__img {
+  position: absolute;
+  right: 14px;
+  bottom: 16px;
+}
+
+.socials__item:nth-child(2) .socials__img {
+  right: 19px;
+  bottom: 14px;
+}
