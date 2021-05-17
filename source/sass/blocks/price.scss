@@ -1,3 +1,30 @@
 .price {
-  background-color: $main-bg-color;
+  background-image: url("../../img/price-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -27px;
+  width: 320px;
+  overflow: hidden;
+  padding: 97px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 107px 0 31px;
+    background-image: url("../../img/price-background-tablet.svg");
+    background-position-y: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 170px 0 61px;
+  }
+}
+
+.price .price__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

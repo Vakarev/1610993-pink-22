@@ -1,3 +1,31 @@
 .socials {
   display: flex;
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    margin: 8px 15px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 10px 0 0 5px;
+  }
+}
+
+.socials__item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 53px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+}
+
+.socials__item + .socials__item {
+  margin-left: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 8px;
+  }
 }

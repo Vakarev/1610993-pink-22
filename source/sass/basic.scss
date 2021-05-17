@@ -1,6 +1,6 @@
 .body {
   min-width: 280px;
-  font-family: "Open Sans" Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
 
   @include text;
 
@@ -8,10 +8,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-
-  & ul {
-    @include list-reset;
-  }
+  margin: 0;
 }
 
 a {
