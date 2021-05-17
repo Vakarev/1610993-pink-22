@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @include list-reset;
+  width: 208px;
+  margin: 0 auto;
 }
 
 .platform__item:nth-child(3) {
