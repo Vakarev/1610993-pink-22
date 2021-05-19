@@ -1,0 +1,19 @@
+.checkbox-label {
+  padding-left: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 61px;
+  }
+}
+
+.checkbox-label + .checkbox-label {
+  margin-top: 53px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.checkbox-label:nth-child(odd) {
+  margin-top: 53px;
+}

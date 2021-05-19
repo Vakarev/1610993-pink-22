@@ -21,7 +21,7 @@
     background-color: $main-text-bg;
 
     @include text ($tretiary-text-color, 12px, 700);
-}
+  }
 
   &--5 {
     text-transform: uppercase;
