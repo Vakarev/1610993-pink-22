@@ -1,4 +1,22 @@
 .text-label {
   color: $second-text-color;
   text-transform: uppercase;
+  margin-top: 9px;
+
+  span {
+    margin-left: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      margin-right: 16px;
+    }
+  }
+}
+
+.text-label + .text-label {
+  margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 47px;
+  }
 }

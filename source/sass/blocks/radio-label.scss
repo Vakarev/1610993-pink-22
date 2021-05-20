@@ -1,0 +1,17 @@
+.radio-label {
+  padding-left: 68px;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 121px;
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 134px;
+  }
+}
+
+.radio-label + .radio-label {
+  padding-top: 45px;
+}

@@ -1,0 +1,36 @@
+.main {
+  &--form {
+    padding: 44px 0 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 92px 0 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.main__promo-text {
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+
+  span {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    max-width: 500px;
+
+    span {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 765px;
+  }
+}
