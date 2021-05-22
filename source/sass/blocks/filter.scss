@@ -1,0 +1,338 @@
+.filter {
+  margin-top: 43px;
+  padding: 20px 0 43px;
+  background-color: $main-bg-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+    padding-top: 57px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 67px;
+    width: 940px;
+    margin: 67px auto 0;
+    padding-bottom: 51px;
+  }
+}
+
+.filter__box {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.filter__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 194px;
+  margin: 26px auto 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 0 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.filter__toggle {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &--crop {
+    position: relative;
+    padding: 22px;
+
+    @media (min-width: $tablet-width) {
+      padding: 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 22px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      background-image: url("../../img/crop.svg");
+      background-repeat: no-repeat;
+      top: 10px;
+      right: 6px;
+
+      @media (min-width: $tablet-width) {
+        width: 22px;
+        height: 22px;
+        background-image: url("../../img/crop-tablet.svg");
+        top: 2px;
+        right: -2px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 44px;
+        height: 44px;
+        background-image: url("../../img/crop.svg");
+        top: 0;
+        right: 2px;
+      }
+    }
+  }
+
+  &--fill {
+    position: relative;
+    padding: 22px 24px;
+
+    @media (min-width: $tablet-width) {
+      padding: 11px 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 22px 24px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 43px;
+      background-image: url("../../img/fill.svg");
+      background-repeat: no-repeat;
+      top: 11px;
+      right: 6px;
+
+      @media (min-width: $tablet-width) {
+        width: 24px;
+        height: 22px;
+        background-image: url("../../img/fill-tablet.svg");
+        top: 4px;
+        right: -1px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 48px;
+        height: 43px;
+        background-image: url("../../img/fill.svg");
+        top: 0;
+        right: 2px;
+      }
+    }
+  }
+
+  &--contrast {
+    position: relative;
+    padding: 16px;
+
+    @media (min-width: $tablet-width) {
+      padding: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 16px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background-image: url("../../img/contrast.svg");
+      background-repeat: no-repeat;
+      top: 10px;
+      right: 6px;
+
+      @media (min-width: $tablet-width) {
+        width: 16px;
+        height: 16px;
+        background-image: url("../../img/contrast-tablet.svg");
+        top: 0;
+        right: -5px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 32px;
+        height: 32px;
+        background-image: url("../../img/contrast.svg");
+        top: 3px;
+        right: -4px;
+      }
+    }
+  }
+}
+
+.filter__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+    min-width: 273px;
+    padding-bottom: 26px;
+    margin-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -2px;
+    padding-bottom: 13px;
+    min-width: 406px;
+  }
+}
+
+.filter__item + .filter__item {
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+  }
+}
+
+.filter__button-slider {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+    width: 202px;
+    height: 2px;
+    background-color: $tretiary-bg-color;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 28px;
+    width: 289px;
+  }
+}
+
+.filter__slider {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  margin: 49px auto 0;
+  background-color: $tretiary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.filter__slider-toggle {
+  position: absolute;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $special-bg-color;
+  background-color: $basic-white;
+  border-radius: 50%;
+  top: -5px;
+  left: 193px;
+
+  &--crop {
+    left: 162px;
+
+    @media (min-width: $desktop-width) {
+      left: 235px;
+    }
+  }
+
+  &--fill {
+    left: 26px;
+
+    @media (min-width: $desktop-width) {
+      left: 37px;
+    }
+  }
+
+  &--contrast {
+    left: 97px;
+
+    @media (min-width: $desktop-width) {
+      left: 138px;
+    }
+  }
+}
+
+.filter__wrapper {
+  border-top: 1px solid rgba(40, 54, 69, 0.1);
+  margin-top: 34px;
+  padding-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 29px;
+    margin-left: 25px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-top: 117px;
+    margin-left: -38px;
+  }
+}
+
+.filter__button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 15px 0;
+  border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 257px;
+    padding: 16px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 184px;
+  }
+
+  &--upload {
+    color: $second-text-color;
+    border: 3px solid $special-bg-color;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 35px;
+    }
+  }
+
+  &--cancel {
+    color: $tretiary-bg-color;
+    border: 3px solid $tretiary-bg-color;
+    opacity: 0.1;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 64px;
+    }
+  }
+}
+
+.filter__button + .filter__button {
+  margin-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.filter__inner {
+  @media (min-width: $desktop-width) {
+    margin-left: 79px;
+  }
+}
+
