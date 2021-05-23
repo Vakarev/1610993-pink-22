@@ -1,4 +1,108 @@
 .gallery__list {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.gallery__main-inner{
+  position: relative;
+  height: 137px;
+
+    &::before {
+      content: "ПАНОРАМА ДНЯ";
+      text-align: center;
+      vertical-align: middle;
+
+      @include text ($tretiary-text-color, 12px, 700, 24px);
+
+      position: absolute;
+      width: 140px;
+      height: 30px;
+      padding-top: 6px;
+      background-color: $special-bg-color;
+      right: 20px;
+
+      @media (min-width: $tablet-width) {
+        top: 57px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 53px;
+        right: 130px;
+      }
+    }
+}
+
+.gallery__inner {
+  height: 180px;
+}
+
+.gellery__item {
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
+}
+
+.gallery__item + .gallery__item {
+  margin-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.gallery__item:nth-child(even) {
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.gallery__item:not(:nth-child(3n+1)) {
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
+  }
+}
+
+.gallery__item + .gallery__item + .gallery__item {
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.gallery__item + .gallery__item + .gallery__item + .gallery__item {
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+  }
+}
+
+.gallery__preview {
+  text-align: center;
+  margin-top: 43px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-top: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 63px;
+  }
 }

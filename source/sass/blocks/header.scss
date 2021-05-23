@@ -15,15 +15,31 @@
   }
 
   &--form {
-    background-image: url("../../img/header--form-background.jpg");
+    background-image: url("../../img/header--form-catalog-background.jpg");
     background-size: cover;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/header--form-background-tablet.jpg");
+      background-image: url("../../img/header--form-catalog-background-tablet.jpg");
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../../img/header--form-background-desktop.jpg");
+      background-image: url("../../img/header--form-catalog-background-desktop.jpg");
+    }
+  }
+
+  &--catalog {
+    background-image: url("../../img/header--form-catalog-background.jpg");
+    background-size: cover;
+    padding-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/header--form-catalog-background-tablet.jpg");
+      padding-bottom: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/header--form-catalog-background-desktop.jpg");
+      padding-bottom: 0;
     }
   }
 }
