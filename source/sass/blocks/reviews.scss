@@ -35,6 +35,7 @@
   border: none;
   position: relative;
   cursor: pointer;
+  opacity: 0.3;
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -59,6 +60,14 @@
       top: 7px;
     }
   }
+}
+
+.reviews__button:hover {
+  opacity: 0.6;
+}
+
+.reviews__button:active {
+  opacity: 0.1;
 }
 
 .reviews__autor-info {

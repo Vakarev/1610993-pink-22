@@ -14,33 +14,46 @@
   }
 }
 
-.gallery__main-inner{
+.gallery__main-inner {
   position: relative;
   height: 137px;
+  margin: 0 auto;
 
-    &::before {
-      content: "ПАНОРАМА ДНЯ";
-      text-align: center;
-      vertical-align: middle;
+  &--wrapper {
+    width: 320px;
 
-      @include text ($tretiary-text-color, 12px, 700, 24px);
-
-      position: absolute;
-      width: 140px;
-      height: 30px;
-      padding-top: 6px;
-      background-color: $special-bg-color;
-      right: 20px;
-
-      @media (min-width: $tablet-width) {
-        top: 57px;
-      }
-
-      @media (min-width: $desktop-width) {
-        top: 53px;
-        right: 130px;
-      }
+    @media (min-width: $tablet-width) {
+      width: 660px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+    }
+  }
+
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+    text-align: center;
+    vertical-align: middle;
+
+    @include text ($tretiary-text-color, 12px, 700, 24px);
+
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    padding-top: 6px;
+    background-color: $special-bg-color;
+    right: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 53px;
+      right: 130px;
+    }
+  }
 }
 
 .gallery__inner {

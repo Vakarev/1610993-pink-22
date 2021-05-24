@@ -21,6 +21,15 @@
   height: 53px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.socials__item:hover {
+  border-color: rgba(40, 54, 69, 1);
+}
+
+.socials__item:active {
+  opacity: 0.1;
 }
 
 .socials__item + .socials__item {

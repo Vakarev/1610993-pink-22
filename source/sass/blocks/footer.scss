@@ -3,13 +3,13 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
+  padding: 33px 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     min-height: 100px;
-    padding: 10px 0;
+    padding: 3px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +27,33 @@
   @media (min-width: $desktop-width) {
     margin-left: 2px;
   }
+}
+
+.footer__logo-img {
+  fill: $tretiary-bg-color;
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.footer__logo-img:hover {
+  fill: $special-bg-color;
+}
+
+.footer__logo-img:active {
+  fill: $tretiary-bg-color;
+  opacity: 0.3;
 }
 
 .footer__link {
@@ -57,4 +84,12 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
+}
+
+.footer__link:hover::before {
+  background-image: url("../../img/html-academy-logo-hover.svg");
+}
+
+.footer__link:active::before {
+  opacity: 0.3;
 }

@@ -55,6 +55,15 @@
   }
 }
 
+.promo__download:hover {
+  background-color: $basic-white;
+  color: $second-text-color;
+}
+
+.promo__download:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
 .promo__description {
   text-align: center;
   max-width: 240px;
