@@ -75,7 +75,8 @@
   color: $first-text-color;
   margin: 0;
 
-  p {
+  span {
+    display: block;
     margin: 29px 0 0;
   }
 
@@ -85,7 +86,7 @@
     margin: 7px 0 0;
     text-align: center;
 
-    p {
+    span {
       margin: 0 auto;
       max-width: 335px;
       text-align: center;
@@ -95,7 +96,7 @@
   @media (min-width: $desktop-width) {
     @include text($font-size: 50px, $font-weight: 300, $line-height: 68px);
 
-    p {
+    span {
       max-width: 420px;
     }
   }

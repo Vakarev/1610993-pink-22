@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet" href="">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="body">
     <svg style="display: none">
@@ -78,11 +78,9 @@
         <div class="header__box header__box--menu">
         <div class="header__wrapper wrapper">
           <a class="header__logo" href="index.html">
-            <picture>
               <svg class="header__logo-img header__logo-img--desktop" width="147" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-desktop"></use></svg>
               <svg class="header__logo-img header__logo-img--tablet" width="145" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-tablet"></use></svg>
               <svg class="header__logo-img header__logo-img--mobile" width="74" height="23"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-mobile"></use></svg>
-            </picture>
           </a>
           <button class="header__toggle header__toggle--closed">
             <svg class="header__button header__button--burger" width="50" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-burger"></use></svg>
@@ -112,12 +110,12 @@
   </header>
     <main class="main main--catalog">
       <p class="main__preview body-text body-text--1">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <secton class="gallery">
+      <section class="gallery">
         <div class="gallery__main-inner gallery__main-inner--wrapper">
           <a class="gallery__link" href="">
             <picture>
-              <source srcset="img/main-photo-desktop.jpg 1x, img/main-photo-desktop@2x.jpg 2x" width="1200" height="506" media="(min-width: 1200px)">
-              <source srcset="img/main-photo-tablet.jpg 1x, img/main-photo-tablet@2x.jpg 2x" width="660" height="509" media="(min-width: 660px)">
+              <source srcset="img/main-photo-desktop.jpg 1x, img/main-photo-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="img/main-photo-tablet.jpg 1x, img/main-photo-tablet@2x.jpg 2x" media="(min-width: 660px)">
               <img src="img/main-photo.jpg" srcset="img/main-photo@2x.jpg 2x" alt="user photo" class="gallery__img gallery__img--main">
             </picture>
           </a>
@@ -135,8 +133,8 @@
             <div class="gallery__inner">
               <a class="gallery__link" href="">
                 <picture>
-                  <source srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" width="300" height="400" media="(min-width: 1200px)">
-                  <source srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" width="300" height="300" media="(min-width: 660px)">
+                  <source srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" media="(min-width: 660px)">
                   <img src="img/photo-1.jpg" srcset="img/photo-1@2x.jpg 2x" alt="user photo" class="gallery__img">
                 </picture>
               </a>
@@ -151,8 +149,8 @@
             <div class="gallery__inner">
               <a class="gallery__link" href="">
                 <picture>
-                  <source srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" width="300" height="400" media="(min-width: 1200px)">
-                  <source srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" width="300" height="300" media="(min-width: 660px)">
+                  <source srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" media="(min-width: 660px)">
                   <img src="img/photo-2.jpg" srcset="img/photo-2@2x.jpg 2x" alt="user photo" class="gallery__img">
                 </picture>
               </a>
@@ -167,8 +165,8 @@
             <div class="gallery__inner">
               <a class="gallery__link" href="">
                 <picture>
-                  <source srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" width="300" height="400" media="(min-width: 1200px)">
-                  <source srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" width="300" height="300" media="(min-width: 660px)">
+                  <source srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" media="(min-width: 660px)">
                   <img src="img/photo-3.jpg" srcset="img/photo-3@2x.jpg 2x" alt="user photo" class="gallery__img">
                 </picture>
               </a>
@@ -183,8 +181,8 @@
             <div class="gallery__inner">
               <a class="gallery__link" href="">
                 <picture>
-                  <source srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" width="300" height="400" media="(min-width: 1200px)">
-                  <source srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" width="300" height="300" media="(min-width: 660px)">
+                  <source srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" media="(min-width: 660px)">
                   <img src="img/photo-4.jpg" srcset="img/photo-4@2x.jpg 2x" alt="user photo" class="gallery__img">
                 </picture>
               </a>
@@ -199,8 +197,8 @@
             <div class="gallery__inner">
               <a class="gallery__link" href="">
                 <picture>
-                  <source srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x" width="300" height="400" media="(min-width: 1200px)">
-                  <source srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x" width="300" height="300" media="(min-width: 660px)">
+                  <source srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x" media="(min-width: 660px)">
                   <img src="img/photo-5.jpg" srcset="img/photo-5@2x.jpg 2x" alt="user photo" class="gallery__img">
                 </picture>
               </a>
@@ -215,8 +213,8 @@
             <div class="gallery__inner">
               <a class="gallery__link" href="">
                 <picture>
-                  <source srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x" width="300" height="400" media="(min-width: 1200px)">
-                  <source srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x" width="300" height="300" media="(min-width: 660px)">
+                  <source srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x" media="(min-width: 660px)">
                   <img src="img/photo-6.jpg" srcset="img/photo-6@2x.jpg 2x" alt="user photo" class="gallery__img">
                 </picture>
               </a>
@@ -231,13 +229,13 @@
         <p class="gallery__preview body-text body-text--1">Затмите их всех!<br>
           Выкладывайте все, что накопилось в телефоне!
         </p>
-      </secton>
+      </section>
       <section class="filter">
         <div class="filter__box wrapper">
           <div class="filter__inner">
             <a class="filter__link" href="">
               <picture>
-                <source srcset="img/filter-photo-tablet.jpg 1x, img/filter-photo-tablet@2x.jpg 2x" width="300" height="300" media="(min-width: 660px)">
+                <source srcset="img/filter-photo-tablet.jpg 1x, img/filter-photo-tablet@2x.jpg 2x" media="(min-width: 660px)">
                 <img src="img/filter-photo.jpg" srcset="img/filter-photo@2x.jpg 2x" alt="user photo" class="gallery__img">
               </picture>
             </a>
@@ -284,7 +282,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer wrapper">
+    <footer class="footer footer--catalog wrapper">
       <a class="footer__logo" href="index.html">
         <svg class="footer__logo-img footer__logo-img--desktop" width="147" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#footer-logo-desktop"></use></svg>
         <svg class="footer__logo-img footer__logo-img--tablet" width="145" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#footer-logo"></use></svg>

@@ -30,7 +30,7 @@
   justify-content: space-between;
   align-items: baseline;
   width: 194px;
-  margin: 26px auto 0;
+  margin: 35px 0 0 31px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -67,12 +67,15 @@
 }
 
 .filter__item + .filter__item {
+  margin-left: 23px;
+
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
+    margin-top: 19px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 15px;
+    margin-top: 8px;
   }
 }
 
@@ -99,7 +102,7 @@
   position: relative;
   width: 240px;
   height: 2px;
-  margin: 49px auto 0;
+  margin: 33px auto 0;
   background-color: $tretiary-bg-color;
 
   @media (min-width: $tablet-width) {
@@ -154,7 +157,7 @@
   padding-top: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 29px;
+    margin-top: 26px;
     margin-left: 25px;
     border: none;
   }
