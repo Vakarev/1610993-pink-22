@@ -1,5 +1,42 @@
-.nav__list {
+.nav {
   display: none;
+
+  &--menu {
+    display: block;
+  }
+
+  &--position {
+    @media (max-width: $min-desktop-width) {
+      position: absolute;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+
+  @media (max-width: $min-desktop-width) {
+    background-color: $tretiary-bg-color;
+  }
+}
+
+.nav__item {
+  @media (max-width: $min-desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 63px;
+    text-transform: uppercase;
+    width: 320px;
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    @media (min-width: $tablet-width) {
+      width: 660px;
+    }
+  }
+}
+
+.nav__list {
   flex-wrap: wrap;
 
   @include list-reset;
@@ -10,34 +47,31 @@
   }
 }
 
-.nav__toggle {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .nav {
-    margin-top: 16px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .nav__item + .nav__item {
     margin-left: 80px;
   }
 
-  .nav__toggle {
-    display: none;
-  }
-
   .nav__link {
     line-height: 18px;
     font-weight: 400;
+
+    &--active {
+      padding-bottom: 5px;
+      border-bottom: 2px solid $basic-white;
+    }
   }
 
   .nav {
-    margin-top: 13px;
-    margin-right: 2px;
+    margin: 0;
   }
+}
+
+.nav__link:hover {
+  color: $second-text-color;
+}
+
+.nav__link:active {
+  color: $tretiary-text-color;
+  opacity: 0.3;
 }

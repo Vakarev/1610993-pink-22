@@ -24,3 +24,11 @@
     opacity: 1;
   }
 }
+
+.toggles__button:hover {
+  opacity: 0.6;
+}
+
+.toggles__button:active {
+  opacity: 0.1;
+}

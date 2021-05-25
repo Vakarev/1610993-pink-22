@@ -24,11 +24,21 @@
   border: 2px solid $form-button-bg;
   border-radius: 1px;
   padding: 15px 46px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 15px 57px;
   }
 }
+
+.form__button:hover {
+  background-color: $form-button-bg-hover;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.1);
+}
+
 
 .form__legend {
   text-align: center;
@@ -130,6 +140,14 @@
   border-radius: 1px;
 }
 
+.form__text:hover {
+  border-color: $border-color-hover;
+}
+
+.form__text:focus {
+  outline-color: $border-color-active;
+}
+
 .form__subtitle {
   text-align: center;
   max-width: 245px;
@@ -155,7 +173,6 @@
 
 @media (min-width: $tablet-width) {
   .form__item {
-
     &--app {
       @media (min-width: $desktop-width) {
         width: 431px;
@@ -287,8 +304,6 @@
 
 .form__checkbox {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -299,6 +314,15 @@
   margin-left: -58px;
   border: 2px solid $border-color;
   border-radius: 1px;
+  cursor: pointer;
+}
+
+.form__custom-checkbox:hover {
+  border-color: $border-color-hover;
+}
+
+.form__custom-checkbox:active {
+  border-color: $border-color-active;
 }
 
 .form__checkbox:checked + .form__custom-checkbox {
@@ -309,8 +333,6 @@
 
 .form__radio {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -321,6 +343,15 @@
   margin: -5px 0 0 -62px;
   border: 2px solid $border-color;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.form__custom-radio:hover {
+  border-color: $border-color-hover;
+}
+
+.form__custom-radio:active {
+  border-color: $border-color-active;
 }
 
 .form__radio:checked + .form__custom-radio {
@@ -346,4 +377,12 @@
     min-width: 793px;
     max-height: 110px;
   }
+}
+
+.form__textarea:hover {
+  border-color: $border-color-hover;
+}
+
+.form__textarea:focus {
+  outline-color: $border-color-active;
 }

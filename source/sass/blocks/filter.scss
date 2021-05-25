@@ -10,7 +10,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 67px;
     width: 940px;
     margin: 67px auto 0;
     padding-bottom: 51px;
@@ -45,129 +44,9 @@
 }
 
 .filter__toggle {
-  margin: 0;
-  padding: 0;
   border: none;
-
-  &--crop {
-    position: relative;
-    padding: 22px;
-
-    @media (min-width: $tablet-width) {
-      padding: 11px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 22px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 44px;
-      height: 44px;
-      background-image: url("../../img/crop.svg");
-      background-repeat: no-repeat;
-      top: 10px;
-      right: 6px;
-
-      @media (min-width: $tablet-width) {
-        width: 22px;
-        height: 22px;
-        background-image: url("../../img/crop-tablet.svg");
-        top: 2px;
-        right: -2px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 44px;
-        height: 44px;
-        background-image: url("../../img/crop.svg");
-        top: 0;
-        right: 2px;
-      }
-    }
-  }
-
-  &--fill {
-    position: relative;
-    padding: 22px 24px;
-
-    @media (min-width: $tablet-width) {
-      padding: 11px 12px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 22px 24px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 48px;
-      height: 43px;
-      background-image: url("../../img/fill.svg");
-      background-repeat: no-repeat;
-      top: 11px;
-      right: 6px;
-
-      @media (min-width: $tablet-width) {
-        width: 24px;
-        height: 22px;
-        background-image: url("../../img/fill-tablet.svg");
-        top: 4px;
-        right: -1px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 48px;
-        height: 43px;
-        background-image: url("../../img/fill.svg");
-        top: 0;
-        right: 2px;
-      }
-    }
-  }
-
-  &--contrast {
-    position: relative;
-    padding: 16px;
-
-    @media (min-width: $tablet-width) {
-      padding: 8px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 16px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      background-image: url("../../img/contrast.svg");
-      background-repeat: no-repeat;
-      top: 10px;
-      right: 6px;
-
-      @media (min-width: $tablet-width) {
-        width: 16px;
-        height: 16px;
-        background-image: url("../../img/contrast-tablet.svg");
-        top: 0;
-        right: -5px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 32px;
-        height: 32px;
-        background-image: url("../../img/contrast.svg");
-        top: 3px;
-        right: -4px;
-      }
-    }
-  }
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .filter__item {
@@ -238,6 +117,7 @@
   border-radius: 50%;
   top: -5px;
   left: 193px;
+  cursor: pointer;
 
   &--crop {
     left: 162px;
@@ -264,6 +144,10 @@
   }
 }
 
+.filter__slider-toggle:active {
+  background-color: $special-bg-color;
+}
+
 .filter__wrapper {
   border-top: 1px solid rgba(40, 54, 69, 0.1);
   margin-top: 34px;
@@ -288,6 +172,7 @@
   margin: 0 auto;
   padding: 15px 0;
   border-radius: 30px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 257px;
@@ -308,7 +193,7 @@
   }
 
   &--cancel {
-    color: $tretiary-bg-color;
+    color: $first-text-color;
     border: 3px solid $tretiary-bg-color;
     opacity: 0.1;
 
@@ -316,6 +201,24 @@
       margin-right: 64px;
     }
   }
+}
+
+.filter__button--upload:hover {
+  color: $tretiary-text-color;
+  background-color: $special-bg-color;
+}
+
+.filter__button--upload:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter__button--cancel:hover {
+  opacity: 0.3;
+}
+
+.filter__button--cancel:active {
+  color: $tretiary-text-color;
+  background-color: $tretiary-bg-color;
 }
 
 .filter__button + .filter__button {
@@ -336,3 +239,61 @@
   }
 }
 
+.filter__icon {
+  fill: $tretiary-bg-color;
+  opacity: 0.3;
+
+  &--crop {
+    width: 44px;
+    height: 44px;
+
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 48px;
+      height: 43px;
+    }
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+
+    @media (min-width: $tablet-width) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &--active {
+    fill: $special-bg-color;
+    opacity: 1;
+  }
+}
+
+.filter__icon:hover {
+  opacity: 0.5;
+}
