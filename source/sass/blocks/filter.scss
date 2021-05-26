@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin-left: -9px;
   }
 }
 
@@ -47,6 +47,10 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 41px;
+  }
 }
 
 .filter__item {
@@ -60,8 +64,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -2px;
-    padding-bottom: 13px;
+    margin-top: -5px;
+    padding-bottom: 8px;
     min-width: 406px;
   }
 }
@@ -70,12 +74,18 @@
   margin-left: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 19px;
+    margin-top: 18px;
     margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 8px;
+    margin-top: 15px;
+  }
+}
+
+.filter__item:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    margin-left: 8px;
   }
 }
 
@@ -201,7 +211,7 @@
     opacity: 0.1;
 
     @media (min-width: $desktop-width) {
-      margin-right: 64px;
+      margin-right: 13px;
     }
   }
 }
@@ -299,4 +309,10 @@
 
 .filter__icon:hover {
   opacity: 0.5;
+}
+
+.filter__container {
+  @media (min-width: $desktop-width) {
+    margin-right: 51px;
+  }
 }

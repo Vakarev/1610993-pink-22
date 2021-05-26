@@ -39,27 +39,24 @@
 .contacts__inner::before {
   content: "";
   position: absolute;
-  width: 0;
-  height: 0;
-  top: 0;
+  width: 100%;
+  height: 123px;
+  top: -55px;
   right: 0;
   bottom: 0;
   left: 0;
   margin: 0 auto;
-  border-left: 162px solid transparent;
-  border-right: 162px solid transparent;
-  border-top: 53px solid $basic-white;
+  background-image: url("../../img/triangle.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
 
   @media (min-width: $tablet-width) {
-    border-left-width: 329px;
-    border-right-width: 329px;
-    border-top-width: 78px;
+    top: -32px;
   }
 
   @media (min-width: $desktop-width) {
-    border-left-width: 597px;
-    border-right-width: 597px;
-    border-top-width: 110px;
+    top: 0;
+    background-image: url("../../img/triangle-desktop.svg");
   }
 }
 
@@ -159,14 +156,14 @@
 .contacts__item:nth-child(2) {
   @media (min-width: $desktop-width) {
     order: 3;
-    margin: 0 0 0 100px;
+    margin: 0 0 0 92px;
   }
 }
 
 .contacts__item:nth-child(3) {
   @media (min-width: $desktop-width) {
     order: 2;
-    margin: 0 0 0 100px;
+    margin: 0 0 0 110px;
   }
 }
 

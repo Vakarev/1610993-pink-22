@@ -86,13 +86,13 @@
 
 .gallery__item:not(:nth-child(3n+1)) {
   @media (min-width: $desktop-width) {
-    margin-left: 10px;
+    margin-left: 8px;
   }
 }
 
 .gallery__item + .gallery__item + .gallery__item {
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
+    margin-top: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +102,7 @@
 
 .gallery__item + .gallery__item + .gallery__item + .gallery__item {
   @media (min-width: $desktop-width) {
-    margin-top: 58px;
+    margin-top: 53px;
   }
 }
 
@@ -112,10 +112,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    margin-top: 68px;
+    margin-top: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 63px;
+    margin-top: 59px;
   }
 }
